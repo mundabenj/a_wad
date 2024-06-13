@@ -1,11 +1,12 @@
+<?php require_once ("includes/db_connect.php"); ?>
+
 <?php include_once ("templates/heading.php"); ?>
-        <?php include_once ("templates/nav.php"); ?>
+<?php include_once ("templates/nav.php"); ?>
 <div class="banner">
     <h1>Banner</h1> 
 </div>
 
 <div class="row">
-
     <div class="content">
     <h1>Forms</h1>
     <form action="" method="post" class="contacts_form">
@@ -15,8 +16,6 @@
 
         <label for="em">Email Address:</label><br>
         <input type="email" id="em" placeholder="Email Address" name="em"><br><br>
-        
-
             <br>
             <textarea name="" id="" cols="30" rows="5"></textarea>
 
