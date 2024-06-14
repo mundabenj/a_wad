@@ -16,16 +16,21 @@
 
         <label for="em">Email Address:</label><br>
         <input type="email" id="em" placeholder="Email Address" name="em"><br><br>
-            <br>
-            <textarea name="" id="" cols="30" rows="5"></textarea>
+            
 
-            <!-- <br><br>
-            <select name="" id="">
-                <option value="">--Select Gender--</option>
-                <option value="">Female</option>
-                <option value="">Male</option>
-                <option value="">Rather not say</option>
-            </select> -->
+        
+        <label for="sb">Subject:</label><br>
+        <select name="subject_line" id="sb" required>
+            <option value="">---Select Subject-</option>
+            <option value="Email Support">Email Support</option>
+            <option value="eLearning Support">eLearning Support</option>
+            <option value="AMS Support">AMS Support</option>
+        </select>
+
+        <br><br>
+        
+        <label for="sb">Message:</label><br>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
 
             <br><br>
 
