@@ -4,7 +4,7 @@
     include_once ("templates/nav.php");
 
     if(isset($_GET["DelId"])){
-        $DelId = $_GET["DelId"];
+        $DelId = mysqli_real_escape_string($conn, $_GET["DelId"]);        
 
        // sql to delete a record
         $del_mes = "DELETE FROM messages WHERE messageId='$DelId' LIMIT 1";
