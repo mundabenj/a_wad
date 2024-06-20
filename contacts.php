@@ -5,10 +5,10 @@ include_once ("templates/heading.php");
 include_once ("templates/nav.php");
 
 if(isset($_POST["send_message"])){
-    $fn = $_POST["fullname"];
-    $mail = $_POST["email_address"];
-    $subject = $_POST["subject_line"];
-    $message = $_POST["client_message"];
+    $fn = mysqli_real_escape_string($conn, $_POST["fullname"]);
+    $mail = mysqli_real_escape_string($conn, $_POST["email_address"]);
+    $subject = mysqli_real_escape_string($conn, $_POST["subject_line"]);
+    $message = mysqli_real_escape_string($conn, $_POST["client_message"]);
 
     $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
 
