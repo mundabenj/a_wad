@@ -1,5 +1,4 @@
 <?php
-
 require_once ("includes/db_connect.php");
 include_once ("templates/heading.php");
 include_once ("templates/nav.php");
@@ -37,7 +36,7 @@ if(isset($_POST["send_message"])){
 
         <label for="sb">Subject:</label><br>
         <select name="subject_line" id="sb" required>
-            <option value="">---Select Subject-</option>
+            <option value="">--Select Subject--</option>
             <option value="Email Support">Email Support</option>
             <option value="eLearning Support">eLearning Support</option>
             <option value="AMS Support">AMS Support</option>

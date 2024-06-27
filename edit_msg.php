@@ -1,5 +1,4 @@
 <?php
-
 require_once ("includes/db_connect.php");
 include_once ("templates/heading.php");
 include_once ("templates/nav.php");
