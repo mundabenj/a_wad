@@ -1,7 +1,7 @@
 .contacts_form label{
     font-size: 1.8em;
 }
-input[type=text],[type=email], select, textarea{
+input[type=text],[type=email],[type=password], select, textarea{
     width: 60%;
     padding: 12px 20px;
     font-size: 1.6em;
@@ -20,4 +20,9 @@ input[type=submit]{
     box-sizing: border-box;
     margin: 8px 0;
     border: none;
+}
+
+.error_form{
+    color:crimson;
+    font-size: small;
 }
